@@ -9,3 +9,18 @@ public:
         cout << "No Induk = " << nim << endl;
     }
 };
+
+int main()
+{
+    mahasiswa mhs{1}; // object mhs
+    mhs.showNim();    // member Access operstor
+
+    mahasiswa &refMhs = mhs;
+    refMhs.nim = 2;
+    mhs.showNim();
+
+    mahasiswa *pMhs = &mhs;
+    pMhs->nim = 3;
+    pMhs->showNim();
+    return 0;
+}
