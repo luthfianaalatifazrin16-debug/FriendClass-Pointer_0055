@@ -15,11 +15,3 @@ public:
 };
 
 class siswa
-{
-private:
-    int id;
-
-public:
-    void setId(int pId);
-    void displayAll(orang &a); // <- FIX di sini
-};
